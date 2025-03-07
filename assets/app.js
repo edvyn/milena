@@ -1,9 +1,3 @@
-window.onload = function() {
-    setTimeout(function() {
-        document.querySelector('.loading-screen').classList.add('hidden');
-    }, 2000); // A tela desaparecerá após 2 segundos
-}
-
 document.addEventListener("DOMContentLoaded", () => {
     const hiddenElements = document.querySelectorAll('.hidden-content');
 

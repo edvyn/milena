@@ -11,25 +11,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Customiza a barra de rolagem */
+
 ::-webkit-scrollbar {
-    width: 8px; /* Tamanho da barra de rolagem */
+    width: 8px; 
 }
 
-/* Cor do fundo da barra de rolagem */
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-/* Cor da parte ativa da barra de rolagem (o "polegar") */
+
 ::-webkit-scrollbar-thumb {
-    background-color: #B93A6F; /* Sua cor personalizada */
-    border-radius: 10px; /* Arredondar as bordas da barra de rolagem */
+    background-color: #B93A6F; 
+    border-radius: 10px; 
 }
 
-/* Cor do polegar da barra de rolagem quando em hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #9C2A5E; /* Cor mais escura quando o mouse passa em cima */
+    background-color: #9C2A5E; 
 }
 .hidden-content {
     opacity: 0;
@@ -78,19 +78,19 @@
     max-width: 400px;
     width: 90%;
     color: var(--primary-color);
-    opacity: 0; /* Inicia com a opacidade em 0 */
-    animation: slideInText 0.5s forwards 0.5s; /* Animação com delay para o texto */
+    opacity: 0; 
+    animation: slideInText 0.5s forwards 0.5s; 
 }
 
-/* Animação de deslocamento e fade-in para o hero-text */
+
 @keyframes slideInText {
     0% {
         opacity: 0;
-        transform: translateX(-70px); /* Começa 70px à esquerda */
+        transform: translateX(-70px); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Finaliza na posição original */
+        transform: translateX(0); 
     }
 }
 
@@ -113,7 +113,7 @@
 }
 
 .btn-custom {
-    background: linear-gradient(45deg, #2E8B57, #32CD32); /* Gradiente verde */
+    background: linear-gradient(45deg, #2E8B57, #32CD32); 
     color: white;
     padding: 16px 32px;
     border: none;
@@ -126,7 +126,7 @@
 }
 
 .btn-custom:hover {
-    background: linear-gradient(45deg, #228B22, #32CD32); /* Tom diferente no hover */
+    background: linear-gradient(45deg, #228B22, #32CD32); 
     transform: scale(1.05);
 }
 
@@ -136,19 +136,19 @@
     object-fit: cover;
 }
 .hero-image {
-    opacity: 0; /* Inicia com a opacidade em 0 */
-    animation: slideInImage 0.5s forwards 0.5s; /* Animação com delay para a imagem */
+    opacity: 0; 
+    animation: slideInImage 0.5s forwards 0.5s; 
 }
 
-/* Animação de deslocamento e fade-in para a hero-image */
+
 @keyframes slideInImage {
     0% {
         opacity: 0;
-        transform: translateX(-70px); /* Começa 70px à esquerda */
+        transform: translateX(-70px); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Finaliza na posição original */
+        transform: translateX(0); 
     }
 }
 
@@ -261,7 +261,7 @@
 
 .cta1-container-item {
     display: flex;
-    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    align-items: center; 
     width: 100%;
     margin-bottom: 0.5rem;
 }
@@ -270,8 +270,8 @@
     color: white;
     font-weight: 400;
     font-size: 1.5rem;
-    text-align: left; /* Garante o alinhamento à esquerda */
-    margin: 0; /* Remove margens extras */
+    text-align: left; 
+    margin: 0; 
 }
 
 .cta1-container-item img {
@@ -326,34 +326,34 @@
 
 .learn-container {
     max-width: 1600px;
-    margin: 0 auto; /* Centraliza o container horizontalmente */
+    margin: 0 auto; 
 }
 
 .learn-container h2 {
-    margin-bottom: 100px; /* Adiciona margem abaixo do título */
+    margin-bottom: 100px; 
     font-weight: 600;
     font-size: 2rem;;
-    color: white; /* Cor do título alterada para branco */
+    color: white; 
     max-width: 600px;
-    width: 90%; /* Diminui a largura do título */
+    width: 90%; 
     margin-left: auto;
-    margin-right: auto; /* Centraliza o título */
+    margin-right: auto; 
 }
 
-/* Estilo para o container da grid */
+
 .learn-grid-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Reduzido o espaço entre os itens */
-    width: 70%; /* A grid ocupa 70% da largura */
-    margin: 0 auto; /* Centraliza a grid dentro do container */
+    gap: 10px; 
+    width: 70%; 
+    margin: 0 auto; 
 }
 
-/* Estilo para os itens da grid */
+
 .learn-item {
     text-align: center;
-    width: 300px; /* Diminui a largura dos itens para diminuir o espaçamento */
+    width: 300px; 
 }
 
 .learn-item img {
@@ -369,7 +369,7 @@
     margin-left: auto;
     margin-right: auto;
     color: white;
-    transition: color 3s linear; /* A transição dura exatamente 3s, igual à rotação */
+    transition: color 3s linear; 
 }
 
 .learn-item:hover img {
@@ -377,28 +377,28 @@
 }
 
 .learn-item:hover p {
-    color: var(--primary-color); /* Amarelo ao final da rotação */
+    color: var(--primary-color); 
 }
 
 
 
-/* Primeira linha com 3 itens */
+
 .learn-item:nth-child(1),
 .learn-item:nth-child(2),
 .learn-item:nth-child(3) {
     flex: 1 1 30%;
 }
 
-/* Segunda linha com 2 itens */
+
 .learn-item:nth-child(4),
 .learn-item:nth-child(5) {
     flex: 1 1 40%;
     margin-top: 50px;
 }
 
-/* Se houver um botão, adicione a margem acima */
+
 .learn .btn-custom {
-    margin-top: 70px; /* Adiciona margem acima do botão */
+    margin-top: 70px;
 }
 
 @media screen and (max-width:870px){
@@ -466,11 +466,11 @@
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.055);
-    transition: box-shadow 0.3s ease-in-out; /* Suaviza a transição */
+    transition: box-shadow 0.3s ease-in-out; 
 }
 
 .shop-container:hover {
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Brilho suave ao passar o mouse */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
 }
 
 
@@ -648,57 +648,6 @@
 }
 
 
-/* Tela de carregamento 
-.loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EECFDC;
-    z-index: 9999;  Garante que fique sobre outros elementos 
-    opacity: 1;
-    transition: all ease 1s;
-    flex-direction: column-reverse;
-}
-
-/* Logo do carregamento 
-.loading-logo {
-    margin-bottom: 30px;
-    width: 300px;
-    height: auto;
-}
-
-
-.spinner {
-    border: 8px solid rgba(255, 255, 255, 0.3);
-    border-top: 8px solid var(--primary-color);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1.5s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* A tela de carregamento desaparece após 2 segundos 
-.loading-screen.hidden {
-    opacity: 0;
-    pointer-events: none; /* Evita que a tela de carregamento interfira em cliques depois de desaparecer 
-}
-
-*/
-
 .course{
     display: flex;
     flex-direction: column;
@@ -744,7 +693,7 @@
     border-radius: 5px;
     padding: 30px;
     padding-left:10px;
-    transition: box-shadow 0.3s ease-in-out; /* Suaviza a transição */
+    transition: box-shadow 0.3s ease-in-out; 
 }
 .course-content-item{
     display: flex;
@@ -820,10 +769,10 @@
     height: fit-content;
     background-color: #cccccc4f;
     border: 0.5px solid white;
-    transition: box-shadow 0.3s ease-in-out; /* Suaviza a transição */
+    transition: box-shadow 0.3s ease-in-out; 
 }
 .box:hover{
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Brilho suave ao passar o mouse */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
 }
 
 .box h4 strong{
@@ -833,7 +782,7 @@
     margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #ffb8d8;
     padding: 15px 10px;
     background-color: var(--dark-color);
     border-radius: 10px;
@@ -864,7 +813,6 @@
 }
 .price{
     font-size: 2.5rem;
-    color: var(--dark-color);
 }
 
 .check-icon {
@@ -913,7 +861,7 @@
 
 .check-icon {
     color: pink;
-    margin-right: 0px; /* Ajuste a distância entre o ícone e o texto */
+    margin-right: 0px; 
   }
   
 
@@ -951,10 +899,10 @@
     font-size: 1.6rem;
 }
 .carousel-item img {
-    object-fit: contain; /* Mantém a imagem completa sem cortes */
+    object-fit: contain; 
     aspect-ratio: 4 / 5;
     width: 100%;
-    max-height: 500px; /* Ajuste para um tamanho menor */
+    max-height: 500px; 
 }
 
 .about .btn-custom{
@@ -1035,12 +983,12 @@
     position: absolute;
     right: 20px;
     font-size: 1.5em;
-    color: var(--secondary-color); /* Cor laranja */
+    color: var(--secondary-color); 
     transition: transform 1s;
   }
   
   .faq-container .tab:hover label::after {
-    color: var(--secondary-color); /* Cor laranja */
+    color: var(--secondary-color); 
   }
   
   .faq-container .tab input:checked ~ label::after {
@@ -1065,7 +1013,7 @@
   .faq-container .tab:nth-child(3) label h2,
   .faq-container .tab:nth-child(4) label h2,
   .faq-container .tab:nth-child(5) label h2 {
-    background: linear-gradient(135deg, #A1246A, #B93A6F); /* Cor laranja */
+    background: linear-gradient(135deg, #A1246A, #B93A6F); 
   }
   
   .faq-container .tab label h3 {
@@ -1104,7 +1052,7 @@
   .faq-section .btn-custom{
     margin-top: 80px ;
   }
-  /* Responsividade */
+
   @media (max-width: 768px) {
     .faq-container {
       flex: 1 1 100%;
