@@ -4,6 +4,21 @@
     --dark-color: #2E1D48;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('bg-hero.png') no-repeat center center/cover;
+    background: url('bg-hero.webp') no-repeat center center/cover;
     min-height: fit-content;
     height: 88vh;
     width: 100%;
@@ -75,7 +90,7 @@
 }
 
 .hero-text {
-    max-width: 400px;
+    max-width: 500px;
     width: 90%;
     color: var(--primary-color);
     opacity: 0; 
@@ -205,7 +220,7 @@
         display: block;
     }
     .hero{
-        background-image: url(bg-mob.png);
+        background-image: url(bg-mob.webp);
     }
     
     .hero-text{
@@ -219,7 +234,7 @@
 
 
 .cta1 {
-    background-image: url('bg-cta1.png');
+    background-image: url('bg-cta1.webp');
     background-size: cover;
     width: 100%;
     height: fit-content;
@@ -227,8 +242,8 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 15%;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     
 }
 
@@ -237,7 +252,7 @@
     font-weight: 600;
     font-size: 3rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
     max-width: 600px;
 }
 
@@ -263,7 +278,7 @@
     display: flex;
     align-items: center; 
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .cta1-container-item p {
@@ -280,9 +295,11 @@
 }
 
 
-
 .cta1 span{
     color: var(--dark-color);
+}
+.cta1 .btn-custom{
+    margin-top: 30px;
 }
 
 @media screen and (max-width:769px){
@@ -444,6 +461,7 @@
     font-size: 1rem;
     color: var(--primary-color);
 }
+
 .shop h3{
     margin-bottom: 40px;
     max-width: 90%;
@@ -484,7 +502,7 @@
     min-height: fit-content;
     padding: 20px;
     box-sizing: border-box;
-    background-image: url(bg-control.png);
+    background-image: url(bg-control.webp);
     background-size: cover;
 }
 
@@ -782,7 +800,7 @@
     margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: bold;
-    color: #ffb8d8;
+    color: #ffd2e5;
     padding: 15px 10px;
     background-color: var(--dark-color);
     border-radius: 10px;
@@ -813,6 +831,7 @@
 }
 .price{
     font-size: 2.5rem;
+    color: var(--dark-color);
 }
 
 .check-icon {
@@ -846,7 +865,7 @@
     gap: 5px;
     font-size: 10px;
     text-align: left;
-    color: var(--dark-color);
+    color: #ffd2e5;
     margin-top: 15px;
     margin-bottom: 20px;
     font-weight: 600;
