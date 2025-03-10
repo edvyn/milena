@@ -4,20 +4,6 @@
     --dark-color: #2E1D48;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url(/assets/fonts/Poppins-Regular.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Poppins';
-    src: url(/assets/fonts/Poppins-Bold.woff2) format('woff2');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
 
 * {
     margin: 0;
@@ -69,24 +55,23 @@
     justify-content: center;
     align-items: center;
     background: url('bg-hero.webp') no-repeat center center/cover;
-    min-height: fit-content;
     height: 88vh;
     width: 100%;
     overflow: hidden;
     gap: 10%;
+}
 
-}
-.hero-img-mob{
-    display: none;
-}
-.logo-mob{
+.hero-img-mob {
     display: none;
 }
 
-
+.logo-mob {
+    display: none;
+}
 
 .logo img {
     width: 300px;
+    height: auto; /* Definir a altura da logo para evitar mudanças no layout */
 }
 
 .hero-text {
@@ -96,7 +81,6 @@
     opacity: 0; 
     animation: slideInText 0.5s forwards 0.5s; 
 }
-
 
 @keyframes slideInText {
     0% {
@@ -108,8 +92,6 @@
         transform: translateX(0); 
     }
 }
-
-
 
 .hero-text h1 {
     font-size: 3.8rem;
@@ -145,16 +127,16 @@
     transform: scale(1.05);
 }
 
-
 .hero-image img {
-    height: 90vh;
+    width: 100%;  /* Ajuste para garantir que a imagem ocupe a largura completa */
+    height: auto; /* Mantém a proporção da imagem */
     object-fit: cover;
 }
+
 .hero-image {
     opacity: 0; 
     animation: slideInImage 0.5s forwards 0.5s; 
 }
-
 
 @keyframes slideInImage {
     0% {
@@ -167,84 +149,95 @@
     }
 }
 
-
-@media screen and (max-width:1000px){
+/* Media Queries */
+@media screen and (max-width: 1000px) {
     .hero-text h1 {
         font-size: 2.5rem;
     }
+
     .hero-text p {
         font-size: 1.2rem;
     }
-    .hero .btn-custom{
+
+    .hero .btn-custom {
         font-size: 1rem;
     }
-    .hero{
+
+    .hero {
         gap: 0;
     }
 }
-@media screen and (max-width:950px){
-    .hero{
-        height:fit-content;
+
+@media screen and (max-width: 950px) {
+    .hero {
+        height: fit-content;
         align-items: normal;
-        padding-bottom: 100px;
+        padding-bottom: 50px; /* Ajuste de padding para evitar movimentação */
         flex-wrap: wrap-reverse;
     }
-    .logo-mob{
+
+    .logo-mob {
         display: block;
     }
-    .before-hero{
+
+    .before-hero {
         height: auto;
         background-color: #EFD1DE;
     }
-    .before-hero img{
+
+    .before-hero img {
         width: 200px;
     }
-    .hero-img-desktop{
-        display: none;
-    
-    }
-    .logo img{
+
+    .hero-img-desktop {
         display: none;
     }
-    .hero-image{
+
+    .logo img {
+        display: none;
+    }
+
+    .hero-image {
         margin: 0;
         padding: 0;
         height: fit-content;
     }
-    .hero-image img{
+
+    .hero-image img {
         height: auto;
         width: 100%;
-
     }
-    .hero-img-mob{
+
+    .hero-img-mob {
         display: block;
     }
-    .hero{
-        background-image: url(bg-mob.webp);
-    }
-    
-    .hero-text{
-        max-width: 90%;
-    }
-    .hero-text p{
-        width:100%;
+
+    .hero {
+        background-image: url('bg-mob.webp');
     }
 
+    .hero-text {
+        max-width: 90%;
+    }
+
+    .hero-text p {
+        width: 100%;
+    }
 }
+
 
 
 .cta1 {
     background-image: url('bg-cta1.webp');
     background-size: cover;
     width: 100%;
-    height: fit-content;
+    min-height: 400px; /* Altura mínima para evitar deslocamento */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 15%;
     padding-top: 100px;
     padding-bottom: 100px;
-    
 }
 
 .cta1 h2 {
@@ -291,13 +284,14 @@
 
 .cta1-container-item img {
     width: 42px;
+    height: 42px; /* Definido o tamanho da altura da imagem */
     margin-right: 12px;
 }
-
 
 .cta1 span{
     color: var(--dark-color);
 }
+
 .cta1 .btn-custom{
     margin-top: 30px;
 }
@@ -455,7 +449,7 @@
     padding-bottom: 50px;
 }
 .shop span{
-    color: var(--primary-color);
+    color: #EFD1DE;
 }
 .shop small{
     font-size: 1rem;
